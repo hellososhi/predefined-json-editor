@@ -87,7 +87,7 @@
     navigator.clipboard.writeText(JSONText.value);
   };
 </script>
-<style lang="scss">
+<style>
   body {
     margin: 0;
   }
@@ -106,33 +106,33 @@
   }
   .console {
     width: 40%;
-    .inputs {
-      margin-top: 12px;
-      > input {
-        width: 15%;
-        margin-right: 12px;
-      }
-    }
-    .names-header > button {
-      margin-left: 12px;
-    }
-    .names-input {
-      width: 15%;
-      margin-right: 12px;
-    }
+  }
+  .inputs {
+    margin-top: 12px;
+  }
+  .inputs > input {
+    width: 15%;
+    margin-right: 12px;
+  }
+  .names-header > button {
+    margin-left: 12px;
+  }
+  .names-input {
+    width: 15%;
+    margin-right: 12px;
   }
   .display {
     width: 40%;
     resize: none;
     display: flex;
     flex-direction: column;
-    button {
-      width: 6em;
-    }
-    textarea {
-      margin-top: 12px;
-      height: 500px;
-      resize: none;
-    }
+  }
+  .display > button {
+    width: 6em;
+  }
+  .display > textarea {
+    margin-top: 12px;
+    height: 500px;
+    resize: none;
   }
 </style>
