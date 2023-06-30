@@ -10,7 +10,8 @@
     "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore .",
     "lint:fix": "eslint --ext .ts,.js,.vue --ignore-path .gitignore . --fix",
     "format": "prettier --check --ignore-path .gitignore \"**/*.{js,ts,vue,json,md}\"",
-    "format:fix": "prettier --write --ignore-path .gitignore \"**/*.{js,ts,vue,json,md}\""
+    "format:fix": "prettier --write --ignore-path .gitignore \"**/*.{js,ts,vue,json,md}\"",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
@@ -24,6 +25,7 @@
     "eslint": "^8.42.0",
     "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-vue": "^9.14.1",
+    "gh-pages": "^5.0.0",
     "nuxt": "^3.5.2",
     "prettier": "^2.8.8",
     "sass": "^1.63.6",
@@ -32,6 +34,5 @@
   "volta": {
     "node": "18.16.0",
     "yarn": "1.22.19"
-  },
-  "dependencies": {}
+  }
 }
