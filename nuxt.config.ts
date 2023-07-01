@@ -7,6 +7,11 @@ export default defineNuxtConfig({
   },
   app: {
     baseURL: "/predefined-json-editor/",
+    head: {
+      title: "Predefined JSON Editor",
+      meta: [{ charset: "utf-8" }, { name: "viewport", content: "width=device-width, initial-scale=1" }],
+      link: [{ rel: "icon", type: "image/x-icon", href: "/predefined-json-editor/favicon.ico" }],
+    },
   },
   nitro: {
     preset: "github-pages",
